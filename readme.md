@@ -10,10 +10,9 @@ Ich empfehle euch die Introductions von GitHub einmal durchzuarbeiten und das To
 [Introduction zu GitHub](https://docs.github.com/en/get-started/start-your-journey/hello-world)
 [Deutsche Version](https://docs.github.com/de/get-started/start-your-journey/hello-world)
 
-###
-**Grundbefehle git:**
+### Grundbefehle git:
 
-Erstellung  und Initialisierung eines Git-Repositorys:
+**Erstellung  und Initialisierung eines Git-Repositorys:**
 ```
 git init -b main
 git add *
@@ -21,17 +20,21 @@ git commit -m "Erster Commit"
 git log
 ```
 
-> git init -b main
+### Was passiert wann?
+
+```git init -b main```
 [Dokumentation git init](https://git-scm.com/docs/git-init) 
 Erstellt ein neues Git Repository mit dem Flag *-b main* wird der Name des Master-Branches auf "main" geändert. Theoretisch könnt ihr jeden beliebigen Namen nutzen, **master** ist Git-Standard, **main** ist der Standard von GitHub.
 
-> git add *
+
+```git add *```
 [Dokumentation git add](https://git-scm.com/docs/git-add)
 Indiziert alle vorhandenen Dateien in dem Repository
 
-> Beispiel1:
-> git commit -m "Erster Commit"
->
+
+Beispiel1:
+```git commit -m "Erster Commit"```
+
 > Beispiel2:
 > git commit -m "Erster Commit
 > - Name des Master Branches zu main geändert
@@ -40,13 +43,8 @@ Indiziert alle vorhandenen Dateien in dem Repository
 Erstellt einen Commit mit einem Titel, den ihr innerhalb der Anführungszeichen eingeben könnt.
 In Beispiel2 seht ihr, dass ihr auch mehrere Zeilen nutzen könnt, dann ist die erste Zeile der Titel und der restliche Inhalt die Nachricht unterhalb des Titels.
 
-> git log
-Zeigt euch dann anschließend die Commit-History an. Verlassen könnt ihr die Ansicht mit der Tast Q (Quit)
+Solltet ihr aus Versehen keine Nachricht eingegeben, den Flag *-m "Nachricht"* vergessen haben, könnt ihr dann eine Nachricht eingeben und mit Escape und :wq (Write + Quit) den Commit abschließen.
 
 
-
-
-
-
-
-
+```git log```
+Zeigt euch dann anschließend die Commit-History an.
